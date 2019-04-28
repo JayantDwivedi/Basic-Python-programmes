@@ -1,8 +1,9 @@
-def reverse_number(n):
-    r = 0
-    while n > 0:
-        r *= 10
-        r += n % 10
-        n /= 10
-    return r
-print(reverse_number(12345))
+def reverse_number(number):
+    reminder = 0
+    while number > 0:
+        reminder *= 10
+        reminder += number % 10
+        number /= 10
+    return reminder
+number=eval("Enter a number :: ")
+print(reverse_number(number))
